@@ -130,7 +130,60 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* References Section */}
+      <section className="bg-white py-28">
+        <div className="max-w-7xl mx-auto px-8">
+          <h3 className="text-4xl font-bold text-center mb-16 text-[#1b2a41] tracking-wide">
+            Nos Références
+          </h3>
 
+          <p className="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-14">
+            Nous accompagnons déjà plusieurs gîtes haut de gamme de la région, 
+            en garantissant une qualité irréprochable et une expérience premium 
+            pour leurs voyageurs.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Les Rives de Chenonceaux */}
+            <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+              <img 
+                src="/lesrives.jpg" 
+                alt="Les Rives de Chenonceaux" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-8">
+                <h4 className="text-2xl font-semibold text-[#1b2a41] mb-2">
+                  Les Rives de Chenonceaux
+                </h4>
+                <p className="text-gray-700 leading-relaxed">
+                  Gîte 4 chambres, 8 lits — Note Airbnb 4,89 ★  
+                  <br />Service complet incluant : gestion des séjours, livraison de pain, 
+                  assistance voyageurs et coordination des prestataires.
+                </p>
+              </div>
+            </div>
+
+            {/* Le Chant des étoiles */}
+            <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+              <img 
+                src="/chantetoiles.jpg" 
+                alt="Le Chant des étoiles" 
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-8">
+                <h4 className="text-2xl font-semibold text-[#1b2a41] mb-2">
+                  Le Chant des Étoiles
+                </h4>
+                <p className="text-gray-700 leading-relaxed">
+                  Gîte 4 chambres, 7 lits — Note Airbnb 4,87 ★  
+                  <br />Accompagnement sur mesure, accueil premium, ménage hôtelier 
+                  et suivi qualité à chaque séjour.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Contact */}
       <section id="contact" className="max-w-4xl mx-auto px-8 py-28 text-center">
         <h3 className="text-4xl font-bold mb-10 text-[#1b2a41] tracking-wide">
