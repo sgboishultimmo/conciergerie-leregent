@@ -147,7 +147,7 @@ export default function App() {
             <article className="group rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-[#f8f7f5]">
               <div className="relative">
                 <img
-                  src="/lesrives.jpg"
+                  src="/lesrives.png"
                   alt="Gîte Les Rives de Chenonceaux"
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -175,7 +175,7 @@ export default function App() {
             <article className="group rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-[#f8f7f5]">
               <div className="relative">
                 <img
-                  src="/chantetoiles.jpg"
+                  src="/chantetoiles.png"
                   alt="Gîte Le Chant des Étoiles"
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
