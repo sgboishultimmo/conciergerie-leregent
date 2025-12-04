@@ -247,7 +247,7 @@ export default function App() {
             <div className="flex flex-col items-center text-center">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-5 shadow-lg border border-white/70">
                 <img
-                  src="/portrait-1.jpg"
+                  src="/photo-sophie.jpg"
                   alt="Direction Conciergerie Le Régent"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -270,7 +270,7 @@ export default function App() {
             <div className="flex flex-col items-center text-center">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-5 shadow-lg border border-white/70">
                 <img
-                  src="/portrait-2.jpg"
+                  src="/photo-greg.jpg"
                   alt="Direction Conciergerie Le Régent"
                   className="w-full h-full object-cover"
                   loading="lazy"
