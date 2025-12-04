@@ -147,7 +147,7 @@ export default function App() {
             {/* Les Rives de Chenonceaux */}
             <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-200">
               <img 
-                src="/lesrives.jpg" 
+                src="/lesrives.png" 
                 alt="Les Rives de Chenonceaux" 
                 className="w-full h-64 object-cover"
               />
@@ -166,7 +166,7 @@ export default function App() {
             {/* Le Chant des étoiles */}
             <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-200">
               <img 
-                src="/chantetoiles.jpg" 
+                src="/chantetoiles.png" 
                 alt="Le Chant des étoiles" 
                 className="w-full h-64 object-cover"
               />
