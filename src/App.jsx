@@ -254,7 +254,7 @@ export default function App() {
                 />
               </div>
               <h4 className="text-xl font-semibold text-[#1b2a41] mb-1">
-                [Nom Prénom]
+                Sophie
               </h4>
               <p className="text-sm text-[#bfa67a] mb-3">
                 Fondatrice · Gestion opérationnelle & relation voyageurs
@@ -277,7 +277,7 @@ export default function App() {
                 />
               </div>
               <h4 className="text-xl font-semibold text-[#1b2a41] mb-1">
-                [Nom Prénom]
+                Grégory
               </h4>
               <p className="text-sm text-[#bfa67a] mb-3">
                 Co-fondateur · Stratégie, expérience propriétaire & optimisation
