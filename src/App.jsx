@@ -6,9 +6,16 @@ export default function App() {
       {/* Header */}
       <header className="bg-white/80 backdrop-blur shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
-          <h1 className="text-3xl font-bold tracking-wide text-[#1b2a41]">
-            Conciergerie <span className="text-[#bfa67a]">Le Régent</span>
-          </h1>
+          <div className="flex items-center gap-4">
+            <img
+              src="/logo-regent.png"
+              alt="Logo Conciergerie Le Régent"
+              className="h-14 w-auto"
+            />
+            <h1 className="text-2xl font-bold tracking-wide text-[#1b2a41]">
+              Conciergerie <span className="text-[#bfa67a]">Le Régent</span>
+            </h1>
+          </div>
           <nav className="space-x-10 text-lg font-light">
             <a href="#services" className="hover:text-[#bfa67a] transition">
               Services
@@ -22,6 +29,7 @@ export default function App() {
           </nav>
         </div>
       </header>
+
 
       {/* Hero */}
       <section className="relative bg-[#1b2a41] text-white py-32 px-6 text-center overflow-hidden">
