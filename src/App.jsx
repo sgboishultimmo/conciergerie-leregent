@@ -130,7 +130,7 @@ export default function App() {
           </div>
         </div>
       </section>
-            {/* References Section */}
+      {/* References Section */}
       <section id="references" className="bg-white py-28">
         <div className="max-w-7xl mx-auto px-8">
           <h3 className="text-4xl font-bold text-center mb-6 text-[#1b2a41] tracking-wide">
@@ -230,6 +230,67 @@ export default function App() {
         </div>
       </section>
 
+      {/* Team / Direction Section */}
+      <section className="bg-[#f2efe9] py-24">
+        <div className="max-w-5xl mx-auto px-8">
+          <h3 className="text-4xl font-bold text-center mb-6 text-[#1b2a41] tracking-wide">
+            Direction & accompagnement
+          </h3>
+          <p className="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-14">
+            Derrière la Conciergerie Le Régent, des propriétaires engagés,
+            passionnés par l&apos;hospitalité et la qualité de service, qui
+            connaissent concrètement les attentes des hôtes comme des voyageurs.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Portrait 1 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-5 shadow-lg border border-white/70">
+                <img
+                  src="/portrait-1.jpg"
+                  alt="Direction Conciergerie Le Régent"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-[#1b2a41] mb-1">
+                [Nom Prénom]
+              </h4>
+              <p className="text-sm text-[#bfa67a] mb-3">
+                Fondatrice · Gestion opérationnelle & relation voyageurs
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                En charge de l&apos;accueil, de la coordination des prestataires et du
+                suivi qualité après chaque séjour, avec une attention particulière
+                portée aux détails qui font la différence.
+              </p>
+            </div>
+
+            {/* Portrait 2 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-5 shadow-lg border border-white/70">
+                <img
+                  src="/portrait-2.jpg"
+                  alt="Direction Conciergerie Le Régent"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <h4 className="text-xl font-semibold text-[#1b2a41] mb-1">
+                [Nom Prénom]
+              </h4>
+              <p className="text-sm text-[#bfa67a] mb-3">
+                Co-fondateur · Stratégie, expérience propriétaire & optimisation
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Propriétaire et exploitant de gîtes, il accompagne la mise en
+                place de la conciergerie, l&apos;organisation des séjours et le
+                suivi de la rentabilité dans le temps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Contact */}
       <section id="contact" className="max-w-4xl mx-auto px-8 py-28 text-center">
         <h3 className="text-4xl font-bold mb-10 text-[#1b2a41] tracking-wide">
