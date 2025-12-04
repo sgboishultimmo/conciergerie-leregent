@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function LandingPage() {
+export default function App() {
   return (
     <div className="min-h-screen bg-[#f8f7f5] text-gray-900 font-serif">
       {/* Header */}
@@ -10,9 +10,15 @@ export default function LandingPage() {
             Conciergerie <span className="text-[#bfa67a]">Le Régent</span>
           </h1>
           <nav className="space-x-10 text-lg font-light">
-            <a href="#services" className="hover:text-[#bfa67a] transition">Services</a>
-            <a href="#process" className="hover:text-[#bfa67a] transition">Expérience</a>
-            <a href="#contact" className="hover:text-[#bfa67a] transition">Contact</a>
+            <a href="#services" className="hover:text-[#bfa67a] transition">
+              Services
+            </a>
+            <a href="#process" className="hover:text-[#bfa67a] transition">
+              Expérience
+            </a>
+            <a href="#contact" className="hover:text-[#bfa67a] transition">
+              Contact
+            </a>
           </nav>
         </div>
       </header>
@@ -23,10 +29,11 @@ export default function LandingPage() {
 
         <div className="relative max-w-3xl mx-auto">
           <h2 className="text-5xl font-bold mb-6 tracking-wide">
-            L'excellence au service de vos locations d'exception
+            L&apos;excellence au service de vos locations d&apos;exception
           </h2>
           <p className="text-xl font-light leading-relaxed mb-10">
-            Une conciergerie premium dédiée aux propriétaires exigeants, offrant une expérience sur-mesure à vos voyageurs.
+            Une conciergerie premium dédiée aux propriétaires exigeants,
+            offrant une expérience sur-mesure à vos voyageurs.
           </p>
           <a
             href="#contact"
@@ -44,27 +51,39 @@ export default function LandingPage() {
         </h3>
 
         <div className="grid md:grid-cols-3 gap-14">
-          {[{
-            title: "Accueil personnalisé & expérience voyageurs",
-            text: "Accueil élégant, attentionné, avec conseils sur mesure pour un séjour mémorable.",
-          },{
-            title: "Ménage prestige",
-            text: "Prestations premium avec produits de qualité hôtelière et contrôles systématiques.",
-          },{
-            title: "Gestion du linge luxe",
-            text: "Linge premium soigneusement entretenu : lavage, repassage, préparation raffinée.",
-          },{
-            title: "Conciergerie 7j/7",
-            text: "Support réactif et discret pour vos voyageurs, résolution des imprévus, recommandations locales.",
-          },{
-            title: "Supervision & maintenance",
-            text: "Contrôles réguliers du bien, gestion des prestataires, coordination des opérations.",
-          },{
-            title: "Optimisation du planning et de la rentabilité",
-            text: "Gestion intelligente des séjours, rotation fluide et conseils personnalisés pour maximiser vos revenus.",
-          }].map((s, i) => (
-            <div key={i} className="bg-white p-10 rounded-3xl shadow-lg border border-gray-200">
-              <h4 className="text-2xl font-semibold mb-4 text-[#1b2a41]">{s.title}</h4>
+          {[
+            {
+              title: "Accueil personnalisé & expérience voyageurs",
+              text: "Accueil élégant, attentionné, avec conseils sur mesure pour un séjour mémorable.",
+            },
+            {
+              title: "Ménage prestige",
+              text: "Prestations premium avec produits de qualité hôtelière et contrôles systématiques.",
+            },
+            {
+              title: "Gestion du linge luxe",
+              text: "Linge premium soigneusement entretenu : lavage, repassage, préparation raffinée.",
+            },
+            {
+              title: "Conciergerie 7j/7",
+              text: "Support réactif et discret pour vos voyageurs, résolution des imprévus, recommandations locales.",
+            },
+            {
+              title: "Supervision & maintenance",
+              text: "Contrôles réguliers du bien, gestion des prestataires, coordination des opérations.",
+            },
+            {
+              title: "Optimisation du planning et de la rentabilité",
+              text: "Gestion intelligente des séjours, rotation fluide et conseils personnalisés pour maximiser vos revenus.",
+            },
+          ].map((s, i) => (
+            <div
+              key={i}
+              className="bg-white p-10 rounded-3xl shadow-lg border border-gray-200"
+            >
+              <h4 className="text-2xl font-semibold mb-4 text-[#1b2a41]">
+                {s.title}
+              </h4>
               <p className="text-gray-700 leading-relaxed">{s.text}</p>
             </div>
           ))}
@@ -79,18 +98,24 @@ export default function LandingPage() {
           </h3>
 
           <div className="space-y-14 text-lg font-light">
-            {[{
-              n: "01",
-              text: "Rencontre et découverte de votre bien afin de comprendre vos attentes et votre positionnement.",
-            },{
-              n: "02",
-              text: "Création d'une offre personnalisée adaptée à votre niveau d'exigence et au standing de votre propriété.",
-            },{
-              n: "03",
-              text: "Gestion intégrale et discrète de vos séjours, avec une attention constante portée à l'excellence.",
-            }].map((step, i) => (
+            {[
+              {
+                n: "01",
+                text: "Rencontre et découverte de votre bien afin de comprendre vos attentes et votre positionnement.",
+              },
+              {
+                n: "02",
+                text: "Création d'une offre personnalisée adaptée à votre niveau d'exigence et au standing de votre propriété.",
+              },
+              {
+                n: "03",
+                text: "Gestion intégrale et discrète de vos séjours, avec une attention constante portée à l'excellence.",
+              },
+            ].map((step, i) => (
               <div key={i} className="flex items-start gap-8">
-                <div className="text-5xl font-bold text-[#bfa67a]">{step.n}</div>
+                <div className="text-5xl font-bold text-[#bfa67a]">
+                  {step.n}
+                </div>
                 <p className="leading-relaxed">{step.text}</p>
               </div>
             ))}
@@ -100,9 +125,12 @@ export default function LandingPage() {
 
       {/* Contact */}
       <section id="contact" className="max-w-4xl mx-auto px-8 py-28 text-center">
-        <h3 className="text-4xl font-bold mb-10 text-[#1b2a41] tracking-wide">Contact & Accompagnement</h3>
+        <h3 className="text-4xl font-bold mb-10 text-[#1b2a41] tracking-wide">
+          Contact & Accompagnement
+        </h3>
         <p className="text-xl font-light mb-10 max-w-2xl mx-auto">
-          Confiez la gestion de votre bien à une conciergerie premium offrant rigueur, discrétion et excellence.
+          Confiez la gestion de votre bien à une conciergerie premium offrant
+          rigueur, discrétion et excellence.
         </p>
 
         <a
