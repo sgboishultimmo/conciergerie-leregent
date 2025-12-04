@@ -130,60 +130,106 @@ export default function App() {
           </div>
         </div>
       </section>
-      {/* References Section */}
-      <section className="bg-white py-28">
+            {/* References Section */}
+      <section id="references" className="bg-white py-28">
         <div className="max-w-7xl mx-auto px-8">
-          <h3 className="text-4xl font-bold text-center mb-16 text-[#1b2a41] tracking-wide">
+          <h3 className="text-4xl font-bold text-center mb-6 text-[#1b2a41] tracking-wide">
             Nos Références
           </h3>
 
           <p className="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-14">
-            Nous accompagnons déjà plusieurs gîtes haut de gamme de la région, 
-            en garantissant une qualité irréprochable et une expérience premium 
-            pour leurs voyageurs.
+            Des propriétaires nous confient déjà la gestion de leurs gîtes haut de gamme.
+            Nous veillons à chaque détail pour offrir une expérience irréprochable à leurs voyageurs.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-3 gap-10">
             {/* Les Rives de Chenonceaux */}
-            <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-200">
-              <img 
-                src="/lesrives.png" 
-                alt="Les Rives de Chenonceaux" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-8">
-                <h4 className="text-2xl font-semibold text-[#1b2a41] mb-2">
+            <article className="group rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-[#f8f7f5]">
+              <div className="relative">
+                <img
+                  src="/lesrives.jpg"
+                  alt="Gîte Les Rives de Chenonceaux"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute top-4 left-4 bg-white/85 text-[#1b2a41] text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded-full shadow">
+                  Superhôte · Civray-de-Touraine
+                </div>
+              </div>
+              <div className="p-7">
+                <h4 className="text-2xl font-semibold text-[#1b2a41] mb-1">
                   Les Rives de Chenonceaux
                 </h4>
-                <p className="text-gray-700 leading-relaxed">
-                  Gîte 4 chambres, 8 lits — Note Airbnb 4,89 ★  
-                  <br />Service complet incluant : gestion des séjours, livraison de pain, 
-                  assistance voyageurs et coordination des prestataires.
+                <p className="text-sm text-[#bfa67a] mb-3">
+                  4 chambres · 8 lits · Note Airbnb 4,89 ★
+                </p>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  Service tout inclus : gestion complète des séjours, ménage hôtelier,
+                  gestion du linge et livraison de pain et viennoiseries pour une
+                  expérience chaleureuse et soignée.
                 </p>
               </div>
-            </div>
+            </article>
 
-            {/* Le Chant des étoiles */}
-            <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-200">
-              <img 
-                src="/chantetoiles.png" 
-                alt="Le Chant des étoiles" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-8">
-                <h4 className="text-2xl font-semibold text-[#1b2a41] mb-2">
+            {/* Le Chant des Étoiles */}
+            <article className="group rounded-3xl overflow-hidden shadow-lg border border-gray-200 bg-[#f8f7f5]">
+              <div className="relative">
+                <img
+                  src="/chantetoiles.jpg"
+                  alt="Gîte Le Chant des Étoiles"
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute top-4 left-4 bg-white/85 text-[#1b2a41] text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded-full shadow">
+                  Coup de cœur voyageurs
+                </div>
+              </div>
+              <div className="p-7">
+                <h4 className="text-2xl font-semibold text-[#1b2a41] mb-1">
                   Le Chant des Étoiles
                 </h4>
-                <p className="text-gray-700 leading-relaxed">
-                  Gîte 4 chambres, 7 lits — Note Airbnb 4,87 ★  
-                  <br />Accompagnement sur mesure, accueil premium, ménage hôtelier 
-                  et suivi qualité à chaque séjour.
+                <p className="text-sm text-[#bfa67a] mb-3">
+                  La Croix-en-Touraine · 4 chambres · 7 lits · Note Airbnb 4,87 ★
+                </p>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  Accompagnement sur mesure, accueil premium, suivi rigoureux après
+                  chaque séjour et coordination discrète des prestataires pour garantir
+                  un niveau de qualité constant.
                 </p>
               </div>
-            </div>
+            </article>
+
+            {/* Votre gîte prochainement ? */}
+            <article className="rounded-3xl border-2 border-dashed border-[#d4c5a4] bg-[#fdfaf3] p-7 flex flex-col justify-center">
+              <div className="mb-4 text-[#bfa67a] text-4xl">
+                🗝️
+              </div>
+              <h4 className="text-2xl font-semibold text-[#1b2a41] mb-3">
+                Votre gîte, prochainement parmi nos références
+              </h4>
+              <p className="text-gray-700 leading-relaxed text-sm mb-4">
+                Vous possédez un bien d&apos;exception et souhaitez confier la gestion
+                à une conciergerie premium ? Nous étudions chaque projet avec soin
+                pour construire un accompagnement sur mesure.
+              </p>
+              <p className="text-sm text-gray-500">
+                Prenons le temps d&apos;échanger sur votre propriété, vos attentes et
+                le niveau de service que vous souhaitez offrir à vos voyageurs.
+              </p>
+            </article>
+          </div>
+
+          <div className="mt-14 text-center">
+            <a
+              href="#contact"
+              className="inline-block bg-[#1b2a41] text-white px-10 py-4 rounded-xl text-lg font-semibold hover:bg-[#2a3b57] transition shadow"
+            >
+              Nous confier votre bien
+            </a>
           </div>
         </div>
       </section>
+
       {/* Contact */}
       <section id="contact" className="max-w-4xl mx-auto px-8 py-28 text-center">
         <h3 className="text-4xl font-bold mb-10 text-[#1b2a41] tracking-wide">
